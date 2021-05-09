@@ -6,6 +6,6 @@ files:
     runas: ubuntu
 hooks:
   BeforeInstall:
-      - location: /var/www/html/DemoProject/before_install.sh
+      - location: scripts/before_install.sh
   AfterInstall:
-      - location: /var/www/html/DemoProject/after_install.sh
+      - location: scripts/after_install.sh
