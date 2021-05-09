@@ -2,8 +2,8 @@ version: 0.0
 os: linux
 files:
   - source: /
-  - destination: /var/www/html/
-  - runas: ubuntu
+    destination: /var/www/html/
+    runas: ubuntu
 hooks:
   BeforeInstall:
       - location: /var/www/html/DemoProject/before_install.sh
