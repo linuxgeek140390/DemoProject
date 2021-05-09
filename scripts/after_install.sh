@@ -12,4 +12,4 @@ python3 manage.py migrate
 sudo chown -R www-data:www-data /var/www/
 
 # Restart services
-sudo systemctl apache2 restart
+sudo systemctl restart apache2
