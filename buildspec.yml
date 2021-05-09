@@ -3,16 +3,9 @@ phases:
   pre_build:
     commands:
       - echo "Before running tests"
-      - cd /home/ubuntu
-      - apt-get update -y 
-      - apt-get install python3-pip apache2 libapache2-mod-wsgi-py3 -y 
-      - apt install apache2 -y 
-      - systemctl start  apache2
-      - systemctl enable apache2
-      - apt install python3-pip
-      - apt install python3-venv -y
-      - python3 -m venv demo-env
-      - source demo-env/bin/activate
+      - cp -rf  * /var/www/html
+      - chown -R www-data:www-data /var/www/html/
+      - sudo systemctl apache2 restart
       
       
   build:
