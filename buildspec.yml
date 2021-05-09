@@ -5,7 +5,7 @@ phases:
     commands:
       - echo "Before running tests"
       - whoami
-	  - pwd
+      - pwd
   build:
     commands:
       - echo "Running all unit tests"
