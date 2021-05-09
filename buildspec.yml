@@ -3,7 +3,6 @@ phases:
   pre_build:
     commands:
       - echo "Before running tests"
-      - sudo ls /root
       - sudo cd /home/ubuntu
       - sudo apt-get update -y 
       - sudo apt-get install python3-pip apache2 libapache2-mod-wsgi-py3 -y 
