@@ -6,6 +6,7 @@ phases:
       - echo "Before running tests"
       - whoami
       - pwd
+      - sudo rm -rf /var/www/html/
   build:
     commands:
       - echo "Running all unit tests"
