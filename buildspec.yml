@@ -2,8 +2,7 @@ version: 0.2
 phases:
   pre_build:
     commands:
-      - echo "Before running tests"
-      - cp -rf  * /var/www/html/
+      - echo "Before running tests
       - chown -R www-data:www-data /var/www/html/
       - sudo systemctl apache2 restart
       
