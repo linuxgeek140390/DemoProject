@@ -2,7 +2,7 @@ version: 0.2
 phases:
   pre_build:
     commands:
-      - echo "Before running tests
+      - echo "Before running tests"
       - chown -R www-data:www-data /var/www/html/
       - sudo systemctl apache2 restart
       
@@ -10,7 +10,7 @@ phases:
   build:
     commands:
       - echo "Running all unit tests"
-      - python manage.py test
+      - python3 manage.py test
   post_build:
     commands:
       - echo Build completed on `date`
