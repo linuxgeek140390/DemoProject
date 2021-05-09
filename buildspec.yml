@@ -3,16 +3,16 @@ phases:
   pre_build:
     commands:
       - echo "Before running tests"
-      - sudo cd /home/ubuntu
-      - sudo apt-get update -y 
-      - sudo apt-get install python3-pip apache2 libapache2-mod-wsgi-py3 -y 
-      - sudo apt install apache2 -y 
-      - sudo systemctl start  apache2
-      - sudo systemctl enable apache2
-      - sudo apt install python3-pip
-      - sudo apt install python3-venv -y
-      - sudo python3 -m venv demo-env
-      - sudo source demo-env/bin/activate
+      - cd /home/ubuntu
+      - apt-get update -y 
+      - apt-get install python3-pip apache2 libapache2-mod-wsgi-py3 -y 
+      - apt install apache2 -y 
+      - systemctl start  apache2
+      - systemctl enable apache2
+      - apt install python3-pip
+      - apt install python3-venv -y
+      - python3 -m venv demo-env
+      - source demo-env/bin/activate
       
       
   build:
