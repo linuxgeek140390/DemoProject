@@ -2,8 +2,8 @@
 
 # Install libaries
 ls -lrt
-cd /home/ubuntu/
-source demo-env/bin/activate
+cd /var/www/html/
+source /home/ubuntu/demo-env/bin/activate
 pip3 install -r requirements.txt
 python3 manage.py migrate
 
